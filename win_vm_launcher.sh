@@ -5,4 +5,4 @@ USER=Admin
 PASSWORD=Password1
 VM=IE9
 
-vboxmanage guestcontrol "$VM" exec --image 'C:\Program Files\iTunes\iTunesHelper.exe' --username "$USER" --password "$PASSWORD" -- "$@"
+vboxmanage guestcontrol "$VM" exec --image 'C:\Windows\System32\cmd.exe' --username "$USER" --password "$PASSWORD" -- /c start "$@"

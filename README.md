@@ -1,5 +1,5 @@
-ITMS Launcher
+Win Launcher
 =============
 
-This bash script will launch iTunes from itms:// links in iTunes on my Windows
-VM.
+This bash script will launch links (including itms:// links) in the default
+application in a Windows VM.
