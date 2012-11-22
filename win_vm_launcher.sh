@@ -5,4 +5,4 @@ USER=Admin
 PASSWORD=Password1
 VM=IE9
 
-vboxmanage guestcontrol "$VM" exec --image 'C:\Windows\System32\cmd.exe' --username "$USER" --password "$PASSWORD" -- /c start "$@"
+vboxmanage guestcontrol "$VM" exec --image 'C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe' --username "$USER" --password "$PASSWORD" -- "% {Start-Process $1}"
